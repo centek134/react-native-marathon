@@ -4,9 +4,9 @@ import { Stack } from 'expo-router'
 
 export default function index() {
   return (
-    <View>
+    <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
       <Stack.Screen options={{title: "Project 1"}} />
-      <Text style={{fontFamily: "AmaticBold"}}>index</Text>
+      <Text style={{fontFamily: "AmaticBold", fontSize:50}}>It's working!!!</Text>
     </View>
   )
 }
