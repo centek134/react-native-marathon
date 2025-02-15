@@ -1,39 +1,25 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+import { Stack, SplashScreen } from "expo-router";
+import { useFonts, Inter_900Black } from "@expo-google-fonts/inter";
+import { AmaticSC_400Regular, AmaticSC_700Bold} from "@expo-google-fonts/amatic-sc";
+import { useEffect } from "react";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
-
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) {
-    return null;
-  }
-
+    const [fontsLoaded, fontError] = useFonts({
+      Inter: Inter_900Black,
+      Amatic: AmaticSC_400Regular,
+      AmaticBold: AmaticSC_700Bold,
+    });
+  
+    useEffect(() => {
+      if(fontsLoaded || fontError){
+        SplashScreen.hideAsync();
+      }
+    }, [fontsLoaded, fontError])
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Stack
+      screenOptions={{headerTitleAlign: "center", headerStyle: {backgroundColor: "#fff"} }}
+    >
+      <Stack.Screen name="index" options={{ title: "Dev-Marathon"}}/>
+    </Stack>
   );
 }
