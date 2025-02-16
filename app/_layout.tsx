@@ -1,11 +1,14 @@
 import { Stack, SplashScreen } from "expo-router";
-import { useFonts, Inter_900Black } from "@expo-google-fonts/inter";
+import { useFonts, Inter_400Regular, Inter_700Bold, Inter_600SemiBold } from "@expo-google-fonts/inter";
 import { AmaticSC_400Regular, AmaticSC_700Bold} from "@expo-google-fonts/amatic-sc";
 import { useEffect } from "react";
+import { GestureHandlerRootView} from "react-native-gesture-handler";
 
 export default function RootLayout() {
     const [fontsLoaded, fontError] = useFonts({
-      Inter: Inter_900Black,
+      Inter: Inter_400Regular,
+      InterBold: Inter_700Bold,
+      InterSemi: Inter_600SemiBold,
       Amatic: AmaticSC_400Regular,
       AmaticBold: AmaticSC_700Bold,
     });
@@ -16,10 +19,12 @@ export default function RootLayout() {
       }
     }, [fontsLoaded, fontError])
   return (
-    <Stack
-      screenOptions={{headerTitleAlign: "center", headerStyle: {backgroundColor: "#fff"} }}
-    >
-      <Stack.Screen name="index" options={{ title: "Dev-Marathon"}}/>
-    </Stack>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <Stack
+        screenOptions={{headerTitleAlign: "center", headerStyle: {backgroundColor: "#fff"} }}
+        >
+        <Stack.Screen name="index" options={{ title: "Dev-Marathon"}}/>
+      </Stack>
+    </GestureHandlerRootView>
   );
 }
