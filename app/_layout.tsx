@@ -1,8 +1,8 @@
-import { Stack, SplashScreen } from "expo-router";
 import { useFonts, Inter_400Regular, Inter_700Bold, Inter_600SemiBold } from "@expo-google-fonts/inter";
 import { AmaticSC_400Regular, AmaticSC_700Bold} from "@expo-google-fonts/amatic-sc";
 import { useEffect } from "react";
 import { GestureHandlerRootView} from "react-native-gesture-handler";
+import { Stack, SplashScreen } from "expo-router";
 
 export default function RootLayout() {
     const [fontsLoaded, fontError] = useFonts({
@@ -18,6 +18,7 @@ export default function RootLayout() {
         SplashScreen.hideAsync();
       }
     }, [fontsLoaded, fontError])
+
   return (
     <GestureHandlerRootView style={{flex: 1}}>
       <Stack
