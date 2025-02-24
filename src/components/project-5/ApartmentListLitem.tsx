@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, ViewStyle } from "react-native";
 import React from "react";
 import { Apartment } from "@/app/(projects)/project-5/airbnb";
 
@@ -13,12 +13,13 @@ type ApartmentListItem = {
       rating: number,
       stars: number,
       image: string,
-  }
+  },
+  containerStyle?: ViewStyle
 }
 
-export const ApartmentListItem = ({apartment}: ApartmentListItem) => {
+export const ApartmentListItem = ({apartment, containerStyle}: ApartmentListItem) => {
   return (
-    <View style={styles.card}>
+    <View style={[styles.card, containerStyle]}>
       <Image style={styles.image} source={{uri: apartment.image}} />
       <View style={styles.rightContainer}>
         <View>
@@ -36,10 +37,6 @@ export const ApartmentListItem = ({apartment}: ApartmentListItem) => {
 
 const styles = StyleSheet.create({
   card: {
-    position: "absolute",
-    bottom: 50,
-    left: 10,
-    right: 10,
     backgroundColor: "#fff",
     flexDirection: "row",
     borderRadius: 20,
@@ -55,7 +52,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between"
   },
   title: {
-    fontFamily: "InterBold"
+    fontFamily: "InterBold",
+    color: "#000"
   },
   description: {
     fontFamily: "Inter",
