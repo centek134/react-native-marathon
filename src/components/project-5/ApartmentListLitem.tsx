@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, ViewStyle } from "react-native";
+import { View, Text, StyleSheet, Image, ViewStyle, Pressable } from "react-native";
 import React from "react";
 import { Apartment } from "@/app/(projects)/project-5/airbnb";
 
@@ -14,24 +14,27 @@ type ApartmentListItem = {
       stars: number,
       image: string,
   },
-  containerStyle?: ViewStyle
+  containerStyle?: ViewStyle,
+  setRegion?: () => void
 }
 
-export const ApartmentListItem = ({apartment, containerStyle}: ApartmentListItem) => {
-  return (
-    <View style={[styles.card, containerStyle]}>
-      <Image style={styles.image} source={{uri: apartment.image}} />
-      <View style={styles.rightContainer}>
-        <View>
-          <Text style={styles.title}>{apartment.title}</Text>
-          <Text style={styles.description}>{apartment.description}</Text>
-        </View>
-        <View style={styles.footer}>
-          <Text style={styles.price}>$ {apartment.price}</Text>
-          <Text style={styles.price}>★ {apartment.rating} ({apartment.stars})</Text>
+export const ApartmentListItem = ({apartment, containerStyle, setRegion}: ApartmentListItem) => {
+  return ( 
+    <Pressable onTouchEndCapture={setRegion}>
+      <View style={[styles.card, containerStyle]}>
+        <Image style={styles.image} source={{uri: apartment.image}} />
+        <View style={styles.rightContainer}>
+          <View>
+            <Text style={styles.title}>{apartment.title}</Text>
+            <Text style={styles.description}>{apartment.description}</Text>
+          </View>
+          <View style={styles.footer}>
+            <Text style={styles.price}>$ {apartment.price}</Text>
+            <Text style={styles.price}>★ {apartment.rating} ({apartment.stars})</Text>
+          </View>
         </View>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
