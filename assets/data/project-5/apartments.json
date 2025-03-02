@@ -1,0 +1,168 @@
+[
+    {
+      "id": 1,
+      "latitude": 52.2296756,
+      "longitude": 21.0122287,
+      "title": "Modern Apartment in Warsaw",
+      "description": "Stylish place for you to stay in.",
+      "price": 120,
+      "rating": 4.7,
+      "stars": 5,
+      "image": "https://www.thewaterford.com.au/application/files/5615/9296/5786/703_3.jpg"
+    },
+    {
+      "id": 2,
+      "latitude": 50.0646501,
+      "longitude": 19.9449799,
+      "title": "Cozy Studio in Krakow",
+      "description": "Stylish place for you to stay in.",
+      "price": 95,
+      "rating": 4.1,
+      "stars": 4,
+      "image": "https://kostakisapartments.gr/despina/photos/thumbnails/024.jpg"
+    },
+    {
+      "id": 3,
+      "latitude": 54.3520252,
+      "longitude": 18.6466384,
+      "title": "Luxury Apartment in Gdansk",
+      "description": "Stylish place for you to stay in.",
+      "price": 150,
+      "rating": 4.9,
+      "stars": 5,
+      "image": "https://kostakisapartments.gr/despina/photos/thumbnails/Light%20_%20Pixel--6738.jpg"
+    },
+    {
+      "id": 4,
+      "latitude": 51.7592485,
+      "longitude": 19.4559833,
+      "title": "Elegant Flat in Lodz",
+      "description": "Stylish place for you to stay in.",
+      "price": 110,
+      "rating": 3.8,
+      "stars": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxLeiGQ_ltYn9aLu1HMMCdDZaS3tnntgwWw&s"
+    },
+    {
+      "id": 5,
+      "latitude": 53.0137902,
+      "longitude": 18.5984446,
+      "title": "Charming Apartment in Torun",
+      "description": "Stylish place for you to stay in.",
+      "price": 105,
+      "rating": 4.3,
+      "stars": 5,
+      "image": "https://files.idyllic.app/files/static/3134006?width=256&optimizer=image"
+    },
+    {
+      "id": 6,
+      "latitude": 51.2464536,
+      "longitude": 22.5684463,
+      "title": "Spacious Apartment in Lublin",
+      "description": "Stylish place for you to stay in.",
+      "price": 100,
+      "rating": 3.6,
+      "stars": 3,
+      "image": "https://assets.levande.com.au/image/upload/ar_1.0,c_fill,h_256,w_256/f_auto/q_auto/v1/sa/somerton-park/ILA%202B%201B%20Two%20Bedroom%20%7C%20Lumina%20Apartments/009_Open2view_ID700856-Apartment_402_Lumina_Building_somerton_park_lxcele"
+    },
+    {
+      "id": 7,
+      "latitude": 50.0411867,
+      "longitude": 21.9991196,
+      "title": "Comfortable Flat in Rzeszow",
+      "description": "Stylish place for you to stay in.",
+      "price": 85,
+      "rating": 4.0,
+      "stars": 4,
+      "image": "https://files.yappe.in/place/small/karan-pg-serviced-apartments-10334487.webp"
+    },
+    {
+      "id": 8,
+      "latitude": 50.8660773,
+      "longitude": 20.6285671,
+      "title": "Family Apartment in Kielce",
+      "description": "Stylish place for you to stay in.",
+      "price": 115,
+      "rating": 4.2,
+      "stars": 5,
+      "image": "https://www.thewaterford.com.au/application/files/5615/9296/5786/703_3.jpg"
+    },
+    {
+      "id": 9,
+      "latitude": 51.1078852,
+      "longitude": 17.0385376,
+      "title": "Luxury Penthouse in Wroclaw",
+      "description": "Stylish place for you to stay in.",
+      "price": 200,
+      "rating": 5.0,
+      "stars": 5,
+      "image": "https://kostakisapartments.gr/despina/photos/thumbnails/024.jpg"
+    },
+    {
+      "id": 10,
+      "latitude": 49.8223765,
+      "longitude": 19.0467282,
+      "title": "Cozy Flat in Bielsko-Biala",
+      "description": "Stylish place for you to stay in.",
+      "price": 90,
+      "rating": 3.9,
+      "stars": 4,
+      "image": "https://kostakisapartments.gr/despina/photos/thumbnails/Light%20_%20Pixel--6738.jpg"
+    },
+    {
+      "id": 11,
+      "latitude": 52.406374,
+      "longitude": 16.9251681,
+      "title": "Modern Flat in Poznan",
+      "description": "Stylish place for you to stay in.",
+      "price": 140,
+      "rating": 4.8,
+      "stars": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxLeiGQ_ltYn9aLu1HMMCdDZaS3tnntgwWw&s"
+    },
+    {
+      "id": 12,
+      "latitude": 53.4285438,
+      "longitude": 14.5528114,
+      "title": "Artistic Loft in Szczecin",
+      "description": "Stylish place for you to stay in.",
+      "price": 125,
+      "rating": 4.4,
+      "stars": 4,
+      "image": "https://files.idyllic.app/files/static/3134006?width=256&optimizer=image"
+    },
+    {
+      "id": 13,
+      "latitude": 50.2862635,
+      "longitude": 18.6708643,
+      "title": "Apartment with Garden in Gliwice",
+      "description": "Stylish place for you to stay in.",
+      "price": 95,
+      "rating": 3.7,
+      "stars": 3,
+      "image": "https://assets.levande.com.au/image/upload/ar_1.0,c_fill,h_256,w_256/f_auto/q_auto/v1/sa/somerton-park/ILA%202B%201B%20Two%20Bedroom%20%7C%20Lumina%20Apartments/009_Open2view_ID700856-Apartment_402_Lumina_Building_somerton_park_lxcele"
+    },
+    {
+      "id": 14,
+      "latitude": 53.0137902,
+      "longitude": 18.5984446,
+      "title": "Modern Loft in Bydgoszcz",
+      "description": "Stylish place for you to stay in.",
+      "price": 80,
+      "rating": 2.9,
+      "stars": 3,
+      "image": "https://files.yappe.in/place/small/karan-pg-serviced-apartments-10334487.webp"
+    },
+    {
+      "id": 15,
+      "latitude": 51.110872,
+      "longitude": 17.028907,
+      "title": "Stylish Apartment in Katowice",
+      "description": "Stylish place for you to stay in.",
+      "price": 180,
+      "rating": 4.6,
+      "stars": 5,
+      "image": "https://www.thewaterford.com.au/application/files/5615/9296/5786/703_3.jpg"
+    }
+  ]
+  
